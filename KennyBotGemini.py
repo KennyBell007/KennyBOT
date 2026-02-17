@@ -5,11 +5,11 @@ import google.generativeai as genai # Import Google Generative AI library
 
 # Load environment variables from .env file
 load_dotenv()
-GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY') # Changed to GOOGLE_API_KEY
+Gemini_API_KEY = os.getenv('Gemini_API_KEY') 
 DISCORD_TOKEN = os.getenv('TOKEN')
 
 # Configure the Gemini client
-genai.configure(api_key=GOOGLE_API_KEY)
+genai.configure(api_key=Gemini_API_KEY)
 
 def call_gemini(question): # Renamed function to call_gemini
     model = genai.GenerativeModel('gemini-pro') # Specify the Gemini model
